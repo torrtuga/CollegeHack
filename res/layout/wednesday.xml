@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="20dp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="25dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textSize="20dp" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/eStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+
+        <Button
+            android:id="@+id/startTime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Start Time"
+            android:textColor="#3F0FFC" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/eStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+
+        <Button
+            android:id="@+id/stopTime"
+            android:layout_width="100dp"
+            android:textColor="#3F0FFC"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:text="Stop Time"
+            android:shadowRadius="5" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/eWifiStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+
+        <Button
+            android:id="@+id/wifiStart"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Start Wifi"
+            android:textColor="#3F0FFC" >
+
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/eWifiStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <requestFocus>
+            </requestFocus>
+        </EditText>
+
+        <Button
+            android:id="@+id/wifiStop"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#3F0FFC"
+            android:layout_weight="0"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Stop Wifi" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
