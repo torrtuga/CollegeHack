@@ -1,32 +1,39 @@
 package com.example.collegehack;
 
-import android.app.ListActivity;
+import android.app.Activity;
 import android.content.Intent;
-import android.database.DataSetObserver;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class Days extends ListActivity {
+public class Days extends Activity implements OnItemClickListener {
 
 	String days[] = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
 			"Saturday", "Sunday" };
-
+	private ListView listview;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setListAdapter(new ArrayAdapter<String>(Days.this,
+	    setContentView(R.layout.days);
+	    listview=(ListView)findViewById(R.id.listview);
+		listview.setAdapter(new ArrayAdapter<String>(Days.this,
 				android.R.layout.simple_list_item_1,days));
+		listview.setOnItemClickListener(this);
+	
+		
 	}
 
+
+
 	@Override
-	protected void onListItemClick(ListView l, View v, int position, long id) {
+	public void onItemClick(AdapterView<?> parent, View view, int position,
+			long id) {
 		// TODO Auto-generated method stub
-		super.onListItemClick(l, v, position, id);
+
 		String temporary = days[position];
 		try {
 			Class ourClass = Class.forName("com.example.collegehack."
